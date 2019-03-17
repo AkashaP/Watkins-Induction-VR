@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: a5f95acb6f5daab4da5351f578ac3ed1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bandsaw_Base
+    100004: Bandsaw_ControlPanel
+    100006: Bandsaw_H-Vice
+    100008: Bandsaw_Handle
+    100010: Bandsaw_Material-1_Mesh
+    100012: Bandsaw_Material-2_Mesh
+    100014: Bandsaw_Throat
+    100016: Bandsaw_Top
+    100018: Bandsaw_V-Vice
+    400000: //RootNode
+    400002: Bandsaw_Base
+    400004: Bandsaw_ControlPanel
+    400006: Bandsaw_H-Vice
+    400008: Bandsaw_Handle
+    400010: Bandsaw_Material-1_Mesh
+    400012: Bandsaw_Material-2_Mesh
+    400014: Bandsaw_Throat
+    400016: Bandsaw_Top
+    400018: Bandsaw_V-Vice
+    2100000: _BandsawMtl4
+    2100002: _BandsawMtl12
+    2100004: _BandsawMtl44
+    2100006: _BandsawMtl47
+    2100008: _BandsawMtl2
+    2100010: _BandsawMtl45
+    2100012: _BandsawMtl10
+    2100014: _BandsawMtl1a
+    2100016: _BandsawMtla
+    2100018: _BandsawMtl1b
+    2100020: _BandsawMtl11
+    2100022: _BandsawMtl3
+    2100024: _BandsawMtlb
+    2100026: _BandsawMtl19
+    2100028: _BandsawMtl5b
+    2100030: _BandsawMtl9
+    2300000: Bandsaw_Base
+    2300002: Bandsaw_ControlPanel
+    2300004: Bandsaw_H-Vice
+    2300006: Bandsaw_Handle
+    2300008: Bandsaw_Material-1_Mesh
+    2300010: Bandsaw_Material-2_Mesh
+    2300012: Bandsaw_Throat
+    2300014: Bandsaw_Top
+    2300016: Bandsaw_V-Vice
+    3300000: Bandsaw_Base
+    3300002: Bandsaw_ControlPanel
+    3300004: Bandsaw_H-Vice
+    3300006: Bandsaw_Handle
+    3300008: Bandsaw_Material-1_Mesh
+    3300010: Bandsaw_Material-2_Mesh
+    3300012: Bandsaw_Throat
+    3300014: Bandsaw_Top
+    3300016: Bandsaw_V-Vice
+    4300000: Bandsaw_ControlPanel
+    4300002: Bandsaw_Material-2_Mesh
+    4300004: Bandsaw_Material-1_Mesh
+    4300006: Bandsaw_V-Vice
+    4300008: Bandsaw_H-Vice
+    4300010: Bandsaw_Throat
+    4300012: Bandsaw_Top
+    4300014: Bandsaw_Base
+    4300016: Bandsaw_Handle
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
