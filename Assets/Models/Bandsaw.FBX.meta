@@ -13,6 +13,7 @@ ModelImporter:
     100014: Bandsaw_Throat
     100016: Bandsaw_Top
     100018: Bandsaw_V-Vice
+    100020: Bandsaw_gravlock
     400000: //RootNode
     400002: Bandsaw_Base
     400004: Bandsaw_ControlPanel
@@ -23,6 +24,7 @@ ModelImporter:
     400014: Bandsaw_Throat
     400016: Bandsaw_Top
     400018: Bandsaw_V-Vice
+    400020: Bandsaw_gravlock
     2100000: _BandsawMtl4
     2100002: _BandsawMtl12
     2100004: _BandsawMtl44
@@ -48,6 +50,7 @@ ModelImporter:
     2300012: Bandsaw_Throat
     2300014: Bandsaw_Top
     2300016: Bandsaw_V-Vice
+    2300018: Bandsaw_gravlock
     3300000: Bandsaw_Base
     3300002: Bandsaw_ControlPanel
     3300004: Bandsaw_H-Vice
@@ -57,6 +60,7 @@ ModelImporter:
     3300012: Bandsaw_Throat
     3300014: Bandsaw_Top
     3300016: Bandsaw_V-Vice
+    3300018: Bandsaw_gravlock
     4300000: Bandsaw_ControlPanel
     4300002: Bandsaw_Material-2_Mesh
     4300004: Bandsaw_Material-1_Mesh
@@ -66,6 +70,7 @@ ModelImporter:
     4300012: Bandsaw_Top
     4300014: Bandsaw_Base
     4300016: Bandsaw_Handle
+    4300018: Bandsaw_gravlock
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
