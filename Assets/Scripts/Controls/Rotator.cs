@@ -6,11 +6,12 @@ using UnityEngine;
  * Rotates when looked at
  */
 public class Rotator : MonoBehaviour {
-    public static float lookAtThreshold = 1f;
+    public static float lookAtThreshold = .05f;
 
     public Camera cam;// = Camera.main;
-    public GameObject target;
+    //public GameObject target;
     public Vector3 rotation;
+    public OnlyOneActive root;
 
     // Use this for initialization
     void Start () {
@@ -20,9 +21,12 @@ public class Rotator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Vector3 lookAt = cam.WorldToViewportPoint(gameObject.transform.position);
-        if (lookAt.x <= lookAtThreshold && lookAt.y <= lookAtThreshold)
+        if (lookAt.x >= 0.5f - lookAtThreshold &&
+            lookAt.x <= 0.5f + lookAtThreshold &&
+            lookAt.y >= 0.5f - lookAtThreshold &&
+            lookAt.y <= 0.5f + lookAtThreshold)
         {
-            target.transform.Rotate(rotation);
+            root.activeChild.transform.Rotate(rotation);
         }
 	}
 }

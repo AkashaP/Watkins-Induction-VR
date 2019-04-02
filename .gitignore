@@ -6,6 +6,10 @@
 Assets/AssetStoreTools*
 Assets/Tests
 
+# RANDOM DEPENDENCIES
+Assets/GoogleVR
+Assets/GoogleVR*
+
 # Visual Studio cache directory
 .vs/
 
