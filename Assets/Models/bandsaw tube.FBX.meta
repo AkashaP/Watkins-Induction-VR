@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 3a644d36254895c459cd450b19de4191
+guid: 6a0e64f2b364f5546a3bd9333bf90352
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: metal block
-    100002: metal dropoff
-    100004: //RootNode
-    400000: metal block
-    400002: metal dropoff
-    400004: //RootNode
-    2100000: _pillar_drillMaterial_1
-    2300000: metal block
-    2300002: metal dropoff
-    3300000: metal block
-    3300002: metal dropoff
-    4300000: metal dropoff
-    4300002: metal block
+    100000: //RootNode
+    100002: Bandsaw_Material-1_Mesh
+    100004: Bandsaw_Material-2_Mesh
+    400000: //RootNode
+    400002: Bandsaw_Material-1_Mesh
+    400004: Bandsaw_Material-2_Mesh
+    2100000: _BandsawMtl1a
+    2300000: Bandsaw_Material-1_Mesh
+    2300002: Bandsaw_Material-2_Mesh
+    3300000: Bandsaw_Material-1_Mesh
+    3300002: Bandsaw_Material-2_Mesh
+    4300000: Bandsaw_Material-2_Mesh
+    4300002: Bandsaw_Material-1_Mesh
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,7 +47,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.05
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
