@@ -6,11 +6,11 @@ using UnityEngine;
  * Forces this gameobject to look at a camera
  */
 public class CameraAnchor : MonoBehaviour {
-    public Camera cam;
+    private Camera cam;
 
     // Use this for initialization
     void Start () {
-		
+        cam = Camera.main;
 	}
 	
 	// Update is called once per frame

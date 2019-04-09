@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1bd3b4a4efee06d4b818bb9ead67f8d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_targetIconOnScreen: {fileID: 21300000, guid: 01eab4a27fcb6a24794247eeea77600a,
+      type: 3}
+  - m_targetIconHover: {fileID: 21300000, guid: 9526734de3f67a84ebf913f0ef299ca5,
+      type: 3}
+  - m_targetIconOffScreen: {fileID: 21300000, guid: dcef6f7347e03234e9be28a95cc481dd,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
