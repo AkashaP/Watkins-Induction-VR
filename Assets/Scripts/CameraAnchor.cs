@@ -11,11 +11,11 @@ public class CameraAnchor : MonoBehaviour {
     // Use this for initialization
     void Start () {
         cam = Camera.main;
-	}
+        transform.LookAt(cam.transform.position, cam.transform.up);
+        transform.Rotate(new Vector3(0, 180, 0));
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.LookAt(cam.transform.position, cam.transform.up);
-        transform.Rotate(new Vector3(0, 180, 0));
     }
 }
