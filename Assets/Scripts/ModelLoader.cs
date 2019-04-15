@@ -18,6 +18,8 @@ public class ModelLoader : MonoBehaviour {
     public Camera cam;
     public Sprite defaultSprite;
     public Sprite hoveringSprite;
+    // Hack fix
+    public float lookUpThreshold = 14;
 
 	// Use this for initialization
 	void Start () {
@@ -30,8 +32,9 @@ public class ModelLoader : MonoBehaviour {
     {
         Vector3 lookAt = cam.WorldToViewportPoint(gameObject.transform.position);
         //if (!currentlyActive)
-        //Debug.Log(lookAt+transform.parent.gameObject.name);
-        if (lookAt.x >= 0.5f - lookAtThreshold &&
+        //Debug.Log(lookAt.z+transform.parent.gameObject.name);
+        if (lookAt.z > lookUpThreshold &&
+            lookAt.x >= 0.5f - lookAtThreshold &&
             lookAt.x <= 0.5f + lookAtThreshold &&
             lookAt.y >= 0.5f - lookAtThreshold &&
             lookAt.y <= 0.5f + lookAtThreshold)
