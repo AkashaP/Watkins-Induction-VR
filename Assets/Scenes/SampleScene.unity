@@ -1390,6 +1390,34 @@ MonoBehaviour:
     audioClipActive: {fileID: 0}
   guideText: {fileID: 0}
   name: 
+--- !u!1 &579591591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579591592}
+  m_Layer: 0
+  m_Name: check tips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579591592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579591591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.525, y: 1.185, z: 0.054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731852730}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &624450924
 Prefab:
   m_ObjectHideFlags: 0
@@ -1719,6 +1747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731852730}
+  - component: {fileID: 731852731}
   m_Layer: 0
   m_Name: objectives
   m_TagString: Untagged
@@ -1736,6 +1765,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 579591592}
   - {fileID: 1223374628}
   - {fileID: 1842372242}
   - {fileID: 792279442}
@@ -1744,6 +1774,83 @@ Transform:
   m_Father: {fileID: 12849376}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731852731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731852729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0a87233c9dd1a48ae695d9861d1492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetIndicator: {fileID: 843250237}
+  objectives:
+  - dialogueLines: Welcome to the pedestal drill. This is a fixed machine for drilling
+      holes.
+    referencedNode: {fileID: 0}
+    secondsActive: 8
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Before operation, check to see if the drill chuck and drill tip
+      pieces are secured and in good condition.
+    referencedNode: {fileID: 579591591}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Move the material onto the operating bed. Gloves should NOT be
+      worn while operating this machine.
+    referencedNode: {fileID: 1223374627}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Tighten the material securely, so that it will not slide around
+      during the drilling process.
+    referencedNode: {fileID: 1842372241}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Eye protection must be worn to protect against dross shrapnel.
+      Turn the machine on.
+    referencedNode: {fileID: 792279441}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Use the handle to move the drill tip onto the material to perform
+      the cutting procedure.
+    referencedNode: {fileID: 814992572}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Drilling may require multiple passes to get a smooth cut.
+    referencedNode: {fileID: 0}
+    secondsActive: 7
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: ' Take the drill out and inspect the cut.'
+    referencedNode: {fileID: 814992572}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: The cut looks good. Turn off the machine afterwards.
+    referencedNode: {fileID: 1322089058}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: That completes the induction for the Pedestal Drill
+    referencedNode: {fileID: 0}
+    secondsActive: 4
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Move to the next machine by looking at the menu above. Look for
+      the red and white target indicators above the machine labels.
+    referencedNode: {fileID: 0}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  guideText: {fileID: 529511744}
+  name: Pedestal Drill
 --- !u!1 &740416124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2148,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731852730}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &814992572
 GameObject:
@@ -2069,7 +2176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731852730}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815921145
 GameObject:
@@ -2807,8 +2914,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: d6c88414b2cc81249b0c74322b4fb5e9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: d6c88414b2cc81249b0c74322b4fb5e9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 766d3bf4931ae024bb53775c9719d26d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c88414b2cc81249b0c74322b4fb5e9, type: 3}
   m_IsPrefabAsset: 0
@@ -3061,7 +3172,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731852730}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1241454605
 GameObject:
@@ -3236,7 +3347,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1264441374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 4783423bb144eb14c9b0bd7d7d253ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1269970307
@@ -3458,7 +3569,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731852730}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1378057419
 GameObject:
@@ -4072,7 +4183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1666489430
 Transform:
   m_ObjectHideFlags: 0
@@ -4367,8 +4478,9 @@ MonoBehaviour:
     secondsActive: 8
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: Before starting anything, it is critical to ensure the blades are
-      in good condition. Check for any bends or blunted teeth, and replace if necessary.
+  - dialogueLines: Before starting anything, it is critical to check that the blades
+      are secure and in good condition. Check for any bends or blunted teeth, and
+      replace if necessary.
     referencedNode: {fileID: 1994674529}
     secondsActive: 0
     audioClipStart: {fileID: 0}
@@ -4416,7 +4528,7 @@ MonoBehaviour:
     secondsActive: 4
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: Move to the next machine by looking at the menu above. Look at
+  - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
     referencedNode: {fileID: 0}
     secondsActive: 0
@@ -4642,7 +4754,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731852730}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907728417
 GameObject:
