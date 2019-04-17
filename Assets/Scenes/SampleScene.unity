@@ -1356,7 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0a87233c9dd1a48ae695d9861d1492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetIndicator: {fileID: 704791069}
+  targetIndicator: {fileID: 843250237}
   objectives:
   - dialogueLines: 'Welcome to the horizontal bandsaw. '
     referencedNode: {fileID: 826639816}
@@ -1448,11 +1448,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f95acb6f5daab4da5351f578ac3ed1, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &624450925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: a5f95acb6f5daab4da5351f578ac3ed1,
-    type: 3}
-  m_PrefabInternal: {fileID: 624450924}
 --- !u!1001 &643182581
 Prefab:
   m_ObjectHideFlags: 0
@@ -2289,7 +2284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2ca08045de6f4469f9a5a92a0d1a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 624450925}
+  focus: {fileID: 0}
+  indicator: {fileID: 1536963973}
 --- !u!114 &843250238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4363,7 +4359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0a87233c9dd1a48ae695d9861d1492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetIndicator: {fileID: 704791069}
+  targetIndicator: {fileID: 843250237}
   objectives:
   - dialogueLines: Welcome to the horizontal metal bandsaw. The bandsaw is appropriate
       for cutting neat uniform angles.

@@ -9,7 +9,7 @@ using UnityEngine;
 public class TargetIndicator2 : MonoBehaviour {
 
 	public GameObject focus;
-	//public GameObject indicator;
+	public GameObject indicator;
 	private Camera player;
 
 	// Use this for initialization
@@ -20,6 +20,12 @@ public class TargetIndicator2 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (focus == null)
+        {
+            indicator.SetActive(false);
+            return;
+        }
+        indicator.SetActive(true);
         /*Vector3 heading = target.transform.position - player.gameObject.transform.position;
         float distance = heading.magnitude;
         Vector3 direction = heading / distance;
