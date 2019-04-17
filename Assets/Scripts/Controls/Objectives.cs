@@ -8,7 +8,7 @@ public class Objectives : MonoBehaviour {
     public static bool debugMode = true;
     public static float timeToCompleteObjective = 2.5f;
     public static float lookAtThreshold = .05f;
-    public TargetIndicator targetIndicator;
+    public TargetIndicator2 targetIndicator;
     //public static string completedMessage1 = "Well done, you have completed induction for the ";
     //public static string completedMessage2 = ". Move on to the next machine by staring at a link for the next machine";
     //public static string completedMessage2 = ". You have finished induction for all machines";
