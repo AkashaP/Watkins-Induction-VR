@@ -4,7 +4,10 @@ using UnityEngine;
 
 /**
 * Version of TargetIndicator that places objective indicators
-* Spatially, rather than as an overlay
+* Spatially, rather than as an overlay.
+* This exists because overlay GUI is unsupported in VR. 
+* 
+* Attach this script to a world space canvas object, with an indicator image referenced to the indicator variable
 */
 public class TargetIndicator2 : MonoBehaviour {
 
@@ -26,10 +29,7 @@ public class TargetIndicator2 : MonoBehaviour {
             return;
         }
         indicator.SetActive(true);
-        /*Vector3 heading = target.transform.position - player.gameObject.transform.position;
-        float distance = heading.magnitude;
-        Vector3 direction = heading / distance;
-        gameObject.transform.position.Set(direction.x * 1.5f, direction.y * 1.5f, direction.z * 1.5f);*/
+
         gameObject.transform.position = .5f * (focus.transform.position + player.transform.position);
 
         transform.LookAt(player.transform.position, player.transform.up);

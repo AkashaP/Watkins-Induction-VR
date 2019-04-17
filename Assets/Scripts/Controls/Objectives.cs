@@ -15,7 +15,7 @@ public class Objectives : MonoBehaviour {
     public ObjectiveEntry[] objectives;
     public TextMeshProUGUI guideText;
     public string name;
-    public float currentTimer { get; private set; }
+    public static float currentTimer { get; private set; }
     public int currentObjective { get; private set; }
     public bool completed { get; private set; }
     private Camera camera;
@@ -36,17 +36,21 @@ public class Objectives : MonoBehaviour {
             if (currentTimer >= objectiveEntry.secondsActive || (debugMode && Input.GetKeyDown(KeyCode.Space)))
             {
                 currentTimer = 0;
-                if (currentObjective < objectives.Length)
+                if (currentObjective < objectives.Length - 1)
                 {
                     currentObjective++;
                     Refresh();
                 }
-                if (currentObjective >= objectives.Length)
+                if (currentObjective >= objectives.Length - 1)
                     completed = true;
             }
         }
         else {
             Vector3 lookAt = camera.WorldToViewportPoint(node.transform.position);
+            if (debugMode && Input.GetKeyDown(KeyCode.Space)) {
+                IncrementObjective();
+            }
+            else
             if (lookAt.x >= 0.5f - lookAtThreshold &&
                 lookAt.x <= 0.5f + lookAtThreshold &&
                 lookAt.y >= 0.5f - lookAtThreshold &&
@@ -55,20 +59,25 @@ public class Objectives : MonoBehaviour {
                 currentTimer += Time.deltaTime;
                 if (currentTimer >= timeToCompleteObjective)
                 {
-                    currentTimer = 0;
-                    if (currentObjective < objectives.Length)
-                    {
-                        currentObjective++;
-                        Refresh();
-                    }
-                    if (currentObjective >= objectives.Length)
-                        completed = true;
+                    IncrementObjective();
                 }
             } else
             {
                 currentTimer = 0;
             }
         }
+    }
+
+    private void IncrementObjective()
+    {
+        currentTimer = 0;
+        if (currentObjective < objectives.Length)
+        {
+            currentObjective++;
+            Refresh();
+        }
+        if (currentObjective >= objectives.Length)
+            completed = true;
     }
 
     private void Refresh()

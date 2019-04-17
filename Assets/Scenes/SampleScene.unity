@@ -4411,6 +4411,17 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+  - dialogueLines: That completes the induction for the bandsaw
+    referencedNode: {fileID: 0}
+    secondsActive: 4
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Move to the next machine by looking at the menu above. Look at
+      the red and white target indicators above the machine labels.
+    referencedNode: {fileID: 0}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
   guideText: {fileID: 529511744}
   name: Bandsaw
 --- !u!1 &1737479300
