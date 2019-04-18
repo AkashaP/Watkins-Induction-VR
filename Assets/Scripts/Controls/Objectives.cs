@@ -57,13 +57,17 @@ public class Objectives : MonoBehaviour {
                 lookAt.y <= 0.5f + lookAtThreshold)
             {
                 currentTimer += Time.deltaTime;
+                float completedness = Objectives.currentTimer / Objectives.timeToCompleteObjective;
+                CompletionColourIndicator.completeness = completedness;
                 if (currentTimer >= timeToCompleteObjective)
                 {
                     IncrementObjective();
+                    CompletionColourIndicator.completeness = 0;
                 }
             } else
             {
                 currentTimer = 0;
+                CompletionColourIndicator.completeness = 0;
             }
         }
     }

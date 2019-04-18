@@ -38,10 +38,19 @@ public class ModelLoader : MonoBehaviour {
             lookAt.x <= 0.5f + lookAtThreshold &&
             lookAt.y >= 0.5f - lookAtThreshold &&
             lookAt.y <= 0.5f + lookAtThreshold)
-            // TODO need to test lookAt.z because might be looking in reverse direction or something
-            // check for something like isVisibleOnScreen()
         {
-            LoadModel();
+            lookTime += Time.deltaTime;
+            float completedness = lookTime / timeToActivate;
+            CompletionColourIndicator.completeness = completedness;
+            if (lookTime >= timeToActivate)
+            {
+                LoadModel();
+                lookTime = 0;
+                CompletionColourIndicator.completeness = 0;
+            }
+        } else
+        {
+            lookTime = 0;
         }
         if (activator.active)
         {

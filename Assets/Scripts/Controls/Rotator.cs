@@ -27,6 +27,7 @@ public class Rotator : MonoBehaviour {
             lookAt.y <= 0.5f + lookAtThreshold)
         {
             root.activeChild.transform.Rotate(rotation);
+            CompletionColourIndicator.completeness = .5f;
         }
 	}
 }

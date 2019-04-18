@@ -7,14 +7,17 @@ using UnityEngine.UI;
  * The colour of the image changes based on the completion percentage of the objective
  */
 public class CompletionColourIndicator : MonoBehaviour {
-    
+
+    public CompletionColourIndicator instance;
+
     private Image crosshair;
-    //private float completeness;
+    public static float completeness { get; set; }
     private float h, s, v, a;
 
     // Use this for initialization
     void Start()
     {
+        instance = this;
         crosshair = gameObject.GetComponent<Image>();
         Color.RGBToHSV(crosshair.color, out h, out s, out v);
         s = 0;
@@ -27,7 +30,8 @@ public class CompletionColourIndicator : MonoBehaviour {
     void Update()
     {
         // TODO if condition that only makes the colour change if the objective has a node
-        float completeness = Objectives.currentTimer / Objectives.timeToCompleteObjective;
+        //float completeness = Objectives.currentTimer / Objectives.timeToCompleteObjective;
         crosshair.color = Color.HSVToRGB(h, completeness, v);
+        completeness = 0;
     }
 }
