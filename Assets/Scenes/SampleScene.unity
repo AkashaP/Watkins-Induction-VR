@@ -3251,7 +3251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0a87233c9dd1a48ae695d9861d1492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetIndicator: {fileID: 0}
+  targetIndicator: {fileID: 843250237}
   objectives:
   - dialogueLines: Welcome to the Metal Shear. This is a device used for cutting stock
       without the formation of chips or the use of burning or melting.
