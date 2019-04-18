@@ -342,7 +342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1178051119}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &119588748
 GameObject:
@@ -371,6 +371,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1726915271}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &143824183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143824184}
+  m_Layer: 0
+  m_Name: check punch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143824184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143824183}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.111, y: 1.067, z: 0.081}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1178051119}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
@@ -731,6 +759,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: adf0e61eacd98cd48814faf129752045,
     type: 3}
   m_PrefabInternal: {fileID: 1400920611}
+--- !u!1 &355974013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355974014}
+  m_Layer: 0
+  m_Name: magnet base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &355974014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355974013}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.226, y: 0, z: -0.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562704247}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &364931961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,11 +1393,13 @@ Transform:
   m_LocalPosition: {x: -0.366, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 355974014}
+  - {fileID: 2136553501}
   - {fileID: 826639817}
   - {fileID: 1801024019}
   - {fileID: 1987796063}
-  - {fileID: 1431725224}
   - {fileID: 1295388336}
+  - {fileID: 1431725224}
   m_Father: {fileID: 1688118389}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1358,38 +1416,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetIndicator: {fileID: 843250237}
   objectives:
-  - dialogueLines: 'Welcome to the horizontal bandsaw. '
+  - dialogueLines: Welcome to the Magnetic Drill. This is a portable drilling device
+      that can secure itself a surface with an electromagnetic base.
     referencedNode: {fileID: 826639816}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: 
+  - dialogueLines: The device must be placed on a suitable flat surface before the
+      magnet is turned on.
+    referencedNode: {fileID: 355974013}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: 'Once the base is entirely against a flat surface, turn on the
+      magnet to secure the device. '
+    referencedNode: {fileID: 2136553500}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Turn on the drill.
     referencedNode: {fileID: 1801024018}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: 
+  - dialogueLines: Rotate the lever to move the head and perform the cut.
     referencedNode: {fileID: 1987796062}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: 
+  - dialogueLines: Finish the cut.
+    referencedNode: {fileID: 1295388335}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: The cut looks good, well done. Turn off the drill.
     referencedNode: {fileID: 1431725223}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: 
-    referencedNode: {fileID: 1295388335}
+  - dialogueLines: The machine should now be placed away properly. Turn off the magnet
+      first.
+    referencedNode: {fileID: 2136553500}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: 
-    referencedNode: {fileID: 1295388335}
+  - dialogueLines: The device should be placed exactly where it was taken from, with
+      the base against a flat solid surface. Failure to do so will damage the magnet.
+      The base should not rest against the floor.
+    referencedNode: {fileID: 355974013}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  guideText: {fileID: 0}
-  name: 
+  - dialogueLines: That completes the induction for the Magnetic Drill
+    referencedNode: {fileID: 0}
+    secondsActive: 5
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Move to the next machine by looking at the menu above. Look for
+      the red and white target indicators above the machine labels.
+    referencedNode: {fileID: 0}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  guideText: {fileID: 529511744}
+  name: Magnetic Drill
 --- !u!1 &579591591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1611,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c03ffe7d0273fe74083d881600ab8951, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03ffe7d0273fe74083d881600ab8951, type: 3}
@@ -1840,7 +1930,7 @@ MonoBehaviour:
     audioClipActive: {fileID: 0}
   - dialogueLines: That completes the induction for the Pedestal Drill
     referencedNode: {fileID: 0}
-    secondsActive: 4
+    secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
@@ -2359,7 +2449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 562704247}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &843250236
 GameObject:
@@ -2867,7 +2957,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1178051119}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &956326469
 Prefab:
@@ -2914,7 +3004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: d6c88414b2cc81249b0c74322b4fb5e9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: d6c88414b2cc81249b0c74322b4fb5e9, type: 3}
       propertyPath: m_Controller
@@ -3122,6 +3212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1178051119}
+  - component: {fileID: 1178051120}
   m_Layer: 0
   m_Name: objectives
   m_TagString: Untagged
@@ -3139,13 +3230,92 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 143824184}
   - {fileID: 2089224204}
+  - {fileID: 2007917367}
   - {fileID: 114658473}
+  - {fileID: 2131738897}
   - {fileID: 1414319574}
   - {fileID: 936779240}
   m_Father: {fileID: 57267538}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1178051120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178051118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0a87233c9dd1a48ae695d9861d1492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetIndicator: {fileID: 0}
+  objectives:
+  - dialogueLines: Welcome to the Metal Shear. This is a device used for cutting stock
+      without the formation of chips or the use of burning or melting.
+    referencedNode: {fileID: 0}
+    secondsActive: 10
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: While the machine is off, the punches and dies must be checked
+      to ensure they are fitted well and facing the right direction.
+    referencedNode: {fileID: 143824183}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Measure the thickness of the material. The hole diameter of the
+      ounches should be greater than the thickness of the material.
+    referencedNode: {fileID: 2007917366}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Load the sheet onto the operating bed.
+    referencedNode: {fileID: 2089224203}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Align the desired cutting line with the teeth while keeping hands
+      away.
+    referencedNode: {fileID: 114658472}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Turn on the machine
+    referencedNode: {fileID: 2131738896}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Final check to ensure the blades are clear, then perform the cutting
+      operation.
+    referencedNode: {fileID: 1414319573}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Remove the material from the blade to inspect the cut.
+    referencedNode: {fileID: 936779239}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: The cut looks good. Turn off the power
+    referencedNode: {fileID: 2131738896}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: That completes the induction for the Metal Shear
+    referencedNode: {fileID: 0}
+    secondsActive: 5
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  - dialogueLines: Move to the next machine by looking at the menu above. Look for
+      the red and white target indicators above the machine labels.
+    referencedNode: {fileID: 0}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+  guideText: {fileID: 529511744}
+  name: Metal Shear
 --- !u!1 &1223374627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3642,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 562704247}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314135202
 GameObject:
@@ -3967,7 +4137,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1178051119}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1425938836
 Prefab:
@@ -4037,7 +4207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 562704247}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444987913
 GameObject:
@@ -4523,9 +4693,9 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
-  - dialogueLines: That completes the induction for the bandsaw
+  - dialogueLines: That completes the induction for the Bandsaw
     referencedNode: {fileID: 0}
-    secondsActive: 4
+    secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
@@ -4726,7 +4896,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 562704247}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1842372241
 GameObject:
@@ -4870,7 +5040,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 307c03063c90b3c418f2b86a7543aedc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.366
+      value: 0.351
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 307c03063c90b3c418f2b86a7543aedc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4878,7 +5048,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 307c03063c90b3c418f2b86a7543aedc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.098
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 307c03063c90b3c418f2b86a7543aedc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4933,11 +5103,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1987796062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.218, y: 0.322, z: -0.236}
+  m_LocalPosition: {x: 0.2133, y: 0.7776, z: 0.0283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 562704247}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1994674529
 GameObject:
@@ -5067,6 +5237,34 @@ MonoBehaviour:
   defaultSprite: {fileID: 21300000, guid: 28d503e7145b9b6459c5c0173ecf809a, type: 3}
   hoveringSprite: {fileID: 21300000, guid: cc298bf8d08b68a49a8934a6e9ed66c7, type: 3}
   lookUpThreshold: 14
+--- !u!1 &2007917366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007917367}
+  m_Layer: 0
+  m_Name: material edge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2007917367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2007917366}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.086, y: 0, z: 0.842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1178051119}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020240243
 GameObject:
   m_ObjectHideFlags: 0
@@ -5531,7 +5729,35 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1178051119}
-  m_RootOrder: 0
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2131738896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2131738897}
+  m_Layer: 0
+  m_Name: machine power
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2131738897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131738896}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.118, y: 0.943, z: 0.374}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1178051119}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2135638083
 GameObject:
@@ -5633,3 +5859,31 @@ MonoBehaviour:
   defaultSprite: {fileID: 21300000, guid: 28d503e7145b9b6459c5c0173ecf809a, type: 3}
   hoveringSprite: {fileID: 21300000, guid: cc298bf8d08b68a49a8934a6e9ed66c7, type: 3}
   lookUpThreshold: 14
+--- !u!1 &2136553500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2136553501}
+  m_Layer: 0
+  m_Name: magnet power
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2136553501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136553500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.218, y: 0.3291, z: -0.238}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562704247}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
