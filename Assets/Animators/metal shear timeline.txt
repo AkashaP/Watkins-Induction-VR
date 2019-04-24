@@ -1,0 +1,7 @@
+0-2:unloaded
+3-5:loaded
+6-34:slide in
+35-53:punch down
+54-69:punch up
+70-79:release
+90:unload

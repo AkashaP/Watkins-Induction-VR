@@ -1,0 +1,9 @@
+0-11:unloaded
+61-71:horizontal clamp
+81-91:vertical clamp
+100-188:on loop
+189-282:chop
+300-313:release
+314-335:spool
+336-345:off
+346+:unload

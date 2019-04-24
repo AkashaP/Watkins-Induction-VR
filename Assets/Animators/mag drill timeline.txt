@@ -1,0 +1,9 @@
+0-0:unloaded
+1-2:loaded
+3-20:on
+21-101:drill down
+102-131:drill up
+132-145:drill on
+145-148:drill stop
+149-150:drill cleanup
+150:unload

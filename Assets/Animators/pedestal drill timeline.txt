@@ -1,0 +1,8 @@
+0:unloaded
+1-18:clamp
+19-82:drill on
+83-151:drilling
+152-165:drill release
+166-224:drill finish
+225-236:release
+240:unload
