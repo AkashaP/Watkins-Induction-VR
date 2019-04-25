@@ -1,4 +1,5 @@
 0-11:unloaded
+12-60:load
 61-71:horizontal clamp
 81-91:vertical clamp
 100-188:on loop
