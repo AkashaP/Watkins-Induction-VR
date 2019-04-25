@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1563,9 +1563,22 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: a5f95acb6f5daab4da5351f578ac3ed1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5b66dd1ec574e5c4d8a265c8703091a8, type: 2}
+    - target: {fileID: 9500000, guid: a5f95acb6f5daab4da5351f578ac3ed1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f95acb6f5daab4da5351f578ac3ed1, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &624450925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: a5f95acb6f5daab4da5351f578ac3ed1,
+    type: 3}
+  m_PrefabInternal: {fileID: 624450924}
 --- !u!1001 &643182581
 Prefab:
   m_ObjectHideFlags: 0
@@ -1611,8 +1624,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c03ffe7d0273fe74083d881600ab8951, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: c03ffe7d0273fe74083d881600ab8951, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87952bb888518054389eb25823db4d17, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03ffe7d0273fe74083d881600ab8951, type: 3}
   m_IsPrefabAsset: 0
@@ -2478,7 +2495,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 843250236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b2ca08045de6f4469f9a5a92a0d1a59, type: 3}
+  m_Script: {fileID: 11500000, guid: 947f00b7613db6f4bac15e7d059f8782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   focus: {fileID: 0}
@@ -4245,6 +4262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458629285}
+  - component: {fileID: 1458629286}
   m_Layer: 0
   m_Name: Controls
   m_TagString: Untagged
@@ -4268,6 +4286,18 @@ Transform:
   m_Father: {fileID: 561826600}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1458629286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458629284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46e7511f6655e54f9aedf3fab75cf08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ooa: {fileID: 364931963}
 --- !u!1 &1536963973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4347,13 +4377,14 @@ GameObject:
   - component: {fileID: 1666489430}
   - component: {fileID: 1666489432}
   - component: {fileID: 1666489431}
+  - component: {fileID: 1666489433}
   m_Layer: 0
   m_Name: bandsaw_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1666489430
 Transform:
   m_ObjectHideFlags: 0
@@ -4413,6 +4444,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1666489433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666489429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc59ab4331500594fb7cda9bbe9ad8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegateGameObject: {fileID: 624450925}
 --- !u!1 &1688118387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: fb494b7511301b442bb1dbe8c475b0d6,

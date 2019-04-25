@@ -95,8 +95,6 @@ public class Objectives : MonoBehaviour {
         {
             objectives[currentObjective].referencedNode.SetActive(true);
             targetIndicator.focus = objectives[currentObjective].referencedNode;
-            //if (objectives[currentObjective].referencedNode.GetComponent<Node>() != null)
-            //   objectives[currentObjective].referencedNode.AddComponent(typeof(Node));
         }
         guideText.SetText(objectives[currentObjective].dialogueLines);
     }
