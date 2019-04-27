@@ -1422,44 +1422,52 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: The device must be placed on a suitable flat surface before the
       magnet is turned on.
     referencedNode: {fileID: 355974013}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: 'Once the base is entirely against a flat surface, turn on the
       magnet to secure the device. '
     referencedNode: {fileID: 2136553500}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 1
   - dialogueLines: Turn on the drill.
     referencedNode: {fileID: 1801024018}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: Rotate the lever to move the head and perform the cut.
     referencedNode: {fileID: 1987796062}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 2
   - dialogueLines: Finish the cut.
     referencedNode: {fileID: 1295388335}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 3
   - dialogueLines: The cut looks good, well done. Turn off the drill.
     referencedNode: {fileID: 1431725223}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 4
   - dialogueLines: The machine should now be placed away properly. Turn off the magnet
       first.
     referencedNode: {fileID: 2136553500}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 5
   - dialogueLines: The device should be placed exactly where it was taken from, with
       the base against a flat solid surface. Failure to do so will damage the magnet.
       The base should not rest against the floor.
@@ -1467,19 +1475,23 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 6
   - dialogueLines: That completes the induction for the Magnetic Drill
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 7
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
     referencedNode: {fileID: 0}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   guideText: {fileID: 529511744}
   name: Magnetic Drill
+  machineObject: {fileID: 1688118387}
 --- !u!1 &579591591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,64 +1912,76 @@ MonoBehaviour:
     secondsActive: 8
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: Before operation, check to see if the drill chuck and drill tip
       pieces are secured and in good condition.
     referencedNode: {fileID: 579591591}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: Move the material onto the operating bed. Gloves should NOT be
       worn while operating this machine.
     referencedNode: {fileID: 1223374627}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: Tighten the material securely, so that it will not slide around
       during the drilling process.
     referencedNode: {fileID: 1842372241}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 1
   - dialogueLines: Eye protection must be worn to protect against dross shrapnel.
       Turn the machine on.
     referencedNode: {fileID: 792279441}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 2
   - dialogueLines: Use the handle to move the drill tip onto the material to perform
       the cutting procedure.
     referencedNode: {fileID: 814992572}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 3
   - dialogueLines: Drilling may require multiple passes to get a smooth cut.
     referencedNode: {fileID: 0}
     secondsActive: 7
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 4
   - dialogueLines: ' Take the drill out and inspect the cut.'
     referencedNode: {fileID: 814992572}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: The cut looks good. Turn off the machine afterwards.
     referencedNode: {fileID: 1322089058}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 5
   - dialogueLines: That completes the induction for the Pedestal Drill
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 6
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
     referencedNode: {fileID: 0}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   guideText: {fileID: 529511744}
   name: Pedestal Drill
+  machineObject: {fileID: 12849374}
 --- !u!1 &740416124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,63 +3300,81 @@ MonoBehaviour:
     secondsActive: 10
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: While the machine is off, the punches and dies must be checked
       to ensure they are fitted well and facing the right direction.
     referencedNode: {fileID: 143824183}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: Measure the thickness of the material. The hole diameter of the
       ounches should be greater than the thickness of the material.
     referencedNode: {fileID: 2007917366}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   - dialogueLines: Load the sheet onto the operating bed.
     referencedNode: {fileID: 2089224203}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: Align the desired cutting line with the teeth while keeping hands
       away.
     referencedNode: {fileID: 114658472}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 1
   - dialogueLines: Turn on the machine
     referencedNode: {fileID: 2131738896}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 2
   - dialogueLines: Final check to ensure the blades are clear, then perform the cutting
       operation.
     referencedNode: {fileID: 1414319573}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 2
+  - dialogueLines: Now release the punches from the material
+    referencedNode: {fileID: 1414319573}
+    secondsActive: 0
+    audioClipStart: {fileID: 0}
+    audioClipActive: {fileID: 0}
+    animationMode: 3
   - dialogueLines: Remove the material from the blade to inspect the cut.
     referencedNode: {fileID: 936779239}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 4
   - dialogueLines: The cut looks good. Turn off the power
     referencedNode: {fileID: 2131738896}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 5
   - dialogueLines: That completes the induction for the Metal Shear
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 6
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
     referencedNode: {fileID: 0}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: -1
   guideText: {fileID: 529511744}
   name: Metal Shear
+  machineObject: {fileID: 57267536}
 --- !u!1 &1223374627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4691,6 +4733,7 @@ MonoBehaviour:
     secondsActive: 8
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: Before starting anything, it is critical to check that the blades
       are secure and in good condition. Check for any bends or blunted teeth, and
       replace if necessary.
@@ -4698,57 +4741,68 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: In this demo you will be cutting off a portion of a long steel
       tube. Lift the material on the operating bed
     referencedNode: {fileID: 1444987913}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: Ensure that the material is tightly clamped with the vices
     referencedNode: {fileID: 119588748}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 1
   - dialogueLines: Ensure that the material is tightly clamped with the vices
     referencedNode: {fileID: 2020240243}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 2
   - dialogueLines: Turn the power on. You would adjust the feed rate and cutting angle
       to acceptable parameters, but for this demo this has already been configured.
     referencedNode: {fileID: 781168289}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 3
   - dialogueLines: Loosen the gravity lock to perform the cutting operation. Keep
       hands and fingers away from the blade as it moves.
     referencedNode: {fileID: 406660503}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 4
   - dialogueLines: Lift the head to check the cut.
     referencedNode: {fileID: 1799551294}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 5
   - dialogueLines: The cut looks good. Turn off the power.
     referencedNode: {fileID: 70050824}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 6
   - dialogueLines: That completes the induction for the Bandsaw
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
     referencedNode: {fileID: 0}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    animationMode: 0
   guideText: {fileID: 529511744}
   name: Bandsaw
+  machineObject: {fileID: 624450925}
 --- !u!1 &1737479300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,7 +4961,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1799551294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 94.3, y: 214.1, z: 133.7}
+  m_LocalPosition: {x: 145.5, y: 128.7, z: 133.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726915271}

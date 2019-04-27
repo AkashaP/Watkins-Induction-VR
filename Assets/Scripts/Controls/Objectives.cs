@@ -19,10 +19,13 @@ public class Objectives : MonoBehaviour {
     public int currentObjective { get; private set; }
     public bool completed { get; private set; }
     private Camera camera;
+    public GameObject machineObject;
+    private Animator machineAnimator;
 
     // Use this for initialization
     void Start () {
         camera = Camera.main;
+        machineAnimator = machineObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -96,6 +99,10 @@ public class Objectives : MonoBehaviour {
             objectives[currentObjective].referencedNode.SetActive(true);
             targetIndicator.focus = objectives[currentObjective].referencedNode;
         }
+        if (objectives[currentObjective].animationMode != -1)
+        {
+            machineAnimator.SetInteger("mode", objectives[currentObjective].animationMode);
+        }
         guideText.SetText(objectives[currentObjective].dialogueLines);
     }
 
@@ -121,7 +128,9 @@ public class Objectives : MonoBehaviour {
         public float secondsActive = -1;
         [Tooltip("Played when this objective entry is started")]
         public AudioClip audioClipStart;
-        [Tooltip("Played as the waypoint is being looked at")]
+        [Tooltip("Played as the node is being looked at")]
         public AudioClip audioClipActive;
+        [Tooltip("Played when the node is activated, or -1 for no mode change")]
+        public int animationMode = -1;
     }
 }
