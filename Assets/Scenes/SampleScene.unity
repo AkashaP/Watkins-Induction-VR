@@ -1220,7 +1220,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 706456684}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1422,6 +1423,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: The device must be placed on a suitable flat surface before the
       magnet is turned on.
@@ -1429,6 +1431,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   - dialogueLines: 'Once the base is entirely against a flat surface, turn on the
       magnet to secure the device. '
@@ -1436,30 +1439,38 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 1
   - dialogueLines: Turn on the drill.
     referencedNode: {fileID: 1801024018}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   - dialogueLines: Rotate the lever to move the head and perform the cut.
     referencedNode: {fileID: 1987796062}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: f16ca1f9e4482c749b89b11f9e7fd53b, type: 3}
     animationMode: 2
   - dialogueLines: Finish the cut.
     referencedNode: {fileID: 1295388335}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 587f681cb294e1d41bfd1029b798f816, type: 3}
     animationMode: 3
   - dialogueLines: The cut looks good, well done. Turn off the drill.
     referencedNode: {fileID: 1431725223}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 81c408c56f5c5d24085be8c54043ab64, type: 3}
     animationMode: 4
   - dialogueLines: The machine should now be placed away properly. Turn off the magnet
       first.
@@ -1467,6 +1478,8 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 97eef1d84ec00244db181e9f1d44bc18, type: 3}
     animationMode: 5
   - dialogueLines: The device should be placed exactly where it was taken from, with
       the base against a flat solid surface. Failure to do so will damage the magnet.
@@ -1475,12 +1488,14 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 6
   - dialogueLines: That completes the induction for the Magnetic Drill
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 7
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
@@ -1488,9 +1503,11 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   guideText: {fileID: 529511744}
   name: Magnetic Drill
+  audioSource: {fileID: 706456683}
   machineObject: {fileID: 1688118387}
 --- !u!1 &579591591
 GameObject:
@@ -1858,6 +1875,130 @@ MonoBehaviour:
   hoverEdgeDistance: 11.2
   m_targetIconScale: {x: 0.25, y: 0.25, z: 0.25}
   ShowDebugLines: 0
+--- !u!1 &706456682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706456684}
+  - component: {fileID: 706456683}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &706456683
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 706456682}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.657
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &706456684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 706456682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 534669905}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731852729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2053,7 @@ MonoBehaviour:
     secondsActive: 8
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: Before operation, check to see if the drill chuck and drill tip
       pieces are secured and in good condition.
@@ -1919,6 +2061,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   - dialogueLines: Move the material onto the operating bed. Gloves should NOT be
       worn while operating this machine.
@@ -1926,6 +2069,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   - dialogueLines: Tighten the material securely, so that it will not slide around
       during the drilling process.
@@ -1933,6 +2077,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 1
   - dialogueLines: Eye protection must be worn to protect against dross shrapnel.
       Turn the machine on.
@@ -1940,6 +2085,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 2
   - dialogueLines: Use the handle to move the drill tip onto the material to perform
       the cutting procedure.
@@ -1947,30 +2093,39 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 1c8e5664a61e3cb4199c752d45623353, type: 3}
     animationMode: 3
   - dialogueLines: Drilling may require multiple passes to get a smooth cut.
     referencedNode: {fileID: 0}
     secondsActive: 7
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: c93e1f9ab557a1a4f9e2b385a071b411, type: 3}
     animationMode: 4
   - dialogueLines: ' Take the drill out and inspect the cut.'
     referencedNode: {fileID: 814992572}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 949def2092179954f8291a40a652434b, type: 3}
     animationMode: -1
   - dialogueLines: The cut looks good. Turn off the machine afterwards.
     referencedNode: {fileID: 1322089058}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: e80b19d06e6f09948aa9c7e3b097bf40, type: 3}
     animationMode: 5
   - dialogueLines: That completes the induction for the Pedestal Drill
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 6
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
@@ -1978,9 +2133,11 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   guideText: {fileID: 529511744}
   name: Pedestal Drill
+  audioSource: {fileID: 706456683}
   machineObject: {fileID: 12849374}
 --- !u!1 &740416124
 GameObject:
@@ -3300,6 +3457,7 @@ MonoBehaviour:
     secondsActive: 10
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: While the machine is off, the punches and dies must be checked
       to ensure they are fitted well and facing the right direction.
@@ -3307,6 +3465,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   - dialogueLines: Measure the thickness of the material. The hole diameter of the
       ounches should be greater than the thickness of the material.
@@ -3314,12 +3473,14 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   - dialogueLines: Load the sheet onto the operating bed.
     referencedNode: {fileID: 2089224203}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: Align the desired cutting line with the teeth while keeping hands
       away.
@@ -3327,12 +3488,14 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 1
   - dialogueLines: Turn on the machine
     referencedNode: {fileID: 2131738896}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 2
   - dialogueLines: Final check to ensure the blades are clear, then perform the cutting
       operation.
@@ -3340,30 +3503,39 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 13290feb79657cf4bbe3744ed015ebaa, type: 3}
     animationMode: 2
   - dialogueLines: Now release the punches from the material
     referencedNode: {fileID: 1414319573}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: b24a42e9ec435554985f632827efe424, type: 3}
     animationMode: 3
   - dialogueLines: Remove the material from the blade to inspect the cut.
     referencedNode: {fileID: 936779239}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 733df6097200d2b45ae2689562835ac5, type: 3}
     animationMode: 4
   - dialogueLines: The cut looks good. Turn off the power
     referencedNode: {fileID: 2131738896}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 5
   - dialogueLines: That completes the induction for the Metal Shear
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: c28b5309199ebf044a24249fd433907b, type: 3}
     animationMode: 6
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
@@ -3371,9 +3543,11 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: -1
   guideText: {fileID: 529511744}
   name: Metal Shear
+  audioSource: {fileID: 706456683}
   machineObject: {fileID: 57267536}
 --- !u!1 &1223374627
 GameObject:
@@ -4733,6 +4907,7 @@ MonoBehaviour:
     secondsActive: 8
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: Before starting anything, it is critical to check that the blades
       are secure and in good condition. Check for any bends or blunted teeth, and
@@ -4741,6 +4916,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: In this demo you will be cutting off a portion of a long steel
       tube. Lift the material on the operating bed
@@ -4748,18 +4924,21 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   - dialogueLines: Ensure that the material is tightly clamped with the vices
     referencedNode: {fileID: 119588748}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 1
   - dialogueLines: Ensure that the material is tightly clamped with the vices
     referencedNode: {fileID: 2020240243}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 2
   - dialogueLines: Turn the power on. You would adjust the feed rate and cutting angle
       to acceptable parameters, but for this demo this has already been configured.
@@ -4767,6 +4946,7 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 3
   - dialogueLines: Loosen the gravity lock to perform the cutting operation. Keep
       hands and fingers away from the blade as it moves.
@@ -4774,24 +4954,32 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 2c6fb74c194676143b84cc12204e0922, type: 3}
     animationMode: 4
   - dialogueLines: Lift the head to check the cut.
     referencedNode: {fileID: 1799551294}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: cc994a903e4cf134caf6921a5064ef40, type: 3}
     animationMode: 5
   - dialogueLines: The cut looks good. Turn off the power.
     referencedNode: {fileID: 70050824}
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 4086e47d9a144e34783d2f06fc6d4069, type: 3}
     animationMode: 6
   - dialogueLines: That completes the induction for the Bandsaw
     referencedNode: {fileID: 0}
     secondsActive: 5
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips:
+    - {fileID: 8300000, guid: 4ca6e3b5a5ea88040a5bbde769b317e3, type: 3}
     animationMode: 0
   - dialogueLines: Move to the next machine by looking at the menu above. Look for
       the red and white target indicators above the machine labels.
@@ -4799,9 +4987,11 @@ MonoBehaviour:
     secondsActive: 0
     audioClipStart: {fileID: 0}
     audioClipActive: {fileID: 0}
+    audioClips: []
     animationMode: 0
   guideText: {fileID: 529511744}
   name: Bandsaw
+  audioSource: {fileID: 706456683}
   machineObject: {fileID: 624450925}
 --- !u!1 &1737479300
 GameObject:

@@ -19,8 +19,10 @@ public class Objectives : MonoBehaviour {
     public int currentObjective { get; private set; }
     public bool completed { get; private set; }
     private Camera camera;
+    public AudioSource audioSource;
     public GameObject machineObject;
     private Animator machineAnimator;
+    private int playedSound = 0;
 
     // Use this for initialization
     void Start () {
@@ -33,6 +35,17 @@ public class Objectives : MonoBehaviour {
     {
         ObjectiveEntry objectiveEntry = objectives[currentObjective];
         GameObject node = objectiveEntry.referencedNode;
+
+        if (objectives[currentObjective].audioClips != null && playedSound < objectives[currentObjective].audioClips.Length)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = objectives[currentObjective].audioClips[playedSound];
+                audioSource.Play();
+                playedSound++;
+            }
+        }
+
         if (node == null) {
             currentTimer += Time.deltaTime;
             //Debug.Log(currentTimer);
@@ -43,6 +56,8 @@ public class Objectives : MonoBehaviour {
                 {
                     currentObjective++;
                     Refresh();
+                   // if (objectives[currentObjective].audioClipStart != null)
+                   //     audioSource.PlayOneShot(objectives[currentObjective].audioClipStart);
                 }
                 if (currentObjective >= objectives.Length - 1)
                     completed = true;
@@ -59,6 +74,10 @@ public class Objectives : MonoBehaviour {
                 lookAt.y >= 0.5f - lookAtThreshold &&
                 lookAt.y <= 0.5f + lookAtThreshold)
             {
+               // if (objectives[currentObjective].audioClipActive != null && !playedSound) {
+                //    audioSource.PlayOneShot(objectives[currentObjective].audioClipActive);
+                //    playedSound = true;
+               // }
                 currentTimer += Time.deltaTime;
                 float completedness = Objectives.currentTimer / Objectives.timeToCompleteObjective;
                 CompletionColourIndicator.completeness = completedness;
@@ -103,6 +122,7 @@ public class Objectives : MonoBehaviour {
         {
             machineAnimator.SetInteger("mode", objectives[currentObjective].animationMode);
         }
+        playedSound = 0;
         guideText.SetText(objectives[currentObjective].dialogueLines);
     }
 
@@ -130,6 +150,8 @@ public class Objectives : MonoBehaviour {
         public AudioClip audioClipStart;
         [Tooltip("Played as the node is being looked at")]
         public AudioClip audioClipActive;
+        [Tooltip("Played in order when this objective entry is started")]
+        public AudioClip[] audioClips;
         [Tooltip("Played when the node is activated, or -1 for no mode change")]
         public int animationMode = -1;
     }
