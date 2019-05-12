@@ -1,0 +1,9 @@
+timestamps are inclusive-inclusive:
+0-1:	 fresh (no load present)
+(2: load present, but scaled to 0.01)
+3:		 load is present
+19-23:	 load secured
+33-52:	 lift load
+54-115:	 move load
+117-140: lower load to new location
+143-146: remove chains
