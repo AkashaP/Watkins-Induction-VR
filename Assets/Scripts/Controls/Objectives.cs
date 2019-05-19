@@ -118,8 +118,9 @@ public class Objectives : MonoBehaviour {
             objectives[currentObjective].referencedNode.SetActive(true);
             targetIndicator.focus = objectives[currentObjective].referencedNode;
         }
-        if (objectives[currentObjective].animationMode != -1)
+        if (objectives[currentObjective].animationMode != -1) // If the objective has animation
         {
+            // Set the animator to transition to the state containing the animation
             machineAnimator.SetInteger("mode", objectives[currentObjective].animationMode);
         }
         playedSound = 0;

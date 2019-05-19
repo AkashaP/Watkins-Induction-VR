@@ -31,6 +31,7 @@ public class SimpleMouseLook : MonoBehaviour
     Quaternion originalRotation;
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftControl)) return;
         if (axes == RotationAxes.MouseXAndY)
         {
             // Read the mouse input axis
