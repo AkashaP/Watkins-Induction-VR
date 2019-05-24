@@ -7,21 +7,23 @@ public class script_bandsaw_tube : MonoBehaviour {
     public GameObject listenFor;
     public float scaleThreshold = 0.9f;
 
-    private Renderer mRenderer;
+    public MeshRenderer mRenderer1;
+    public MeshRenderer mRenderer2;
 
-	// Use this for initialization
-	void Start () {
-        mRenderer = GetComponent<MeshRenderer>();
+    // Use this for initialization
+    void Start () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (listenFor.transform.localScale.x < scaleThreshold)
         {
-            mRenderer.enabled = true;
+            mRenderer1.enabled = true;
+            mRenderer2.enabled = true;
         } else
         {
-            mRenderer.enabled = false;
+            mRenderer1.enabled = false;
+            mRenderer2.enabled = false;
         }
 	}
 }
