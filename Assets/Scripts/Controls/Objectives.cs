@@ -27,7 +27,6 @@ public class Objectives : MonoBehaviour {
     // Use this for initialization
     void Start () {
         camera = Camera.main;
-        machineAnimator = machineObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -121,6 +120,7 @@ public class Objectives : MonoBehaviour {
         if (objectives[currentObjective].animationMode != -1) // If the objective has animation
         {
             // Set the animator to transition to the state containing the animation
+            machineAnimator = machineObject.GetComponent<Animator>();
             machineAnimator.SetInteger("mode", objectives[currentObjective].animationMode);
         }
         playedSound = 0;
