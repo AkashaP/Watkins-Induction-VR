@@ -712,12 +712,15 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 1
-    UNet: 1
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
+    UNet: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 86b7b1e9-1319-4aa7-beeb-b9e4799126dc
-  projectName: VR_Proto_3
+  cloudProjectId: c6ba9af4-94d9-481f-9aac-792949cbc208
+  projectName: VR_Proto_3 (1)
   organizationId: dragon-7000cca2-381d-4e12-86a8-49987d0a36a6
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
