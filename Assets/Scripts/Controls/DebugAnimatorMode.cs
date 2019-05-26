@@ -10,6 +10,7 @@ public class DebugAnimatorMode : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        if (!ooa.activeChild.activeSelf) return;
         // Resolve animator
         activeAnimator = ooa.activeChild.GetComponent<Animator>();
         if (activeAnimator == null)

@@ -28,9 +28,9 @@ public class Objectives : MonoBehaviour {
     void Start () {
         camera = Camera.main;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update ()
     {
         ObjectiveEntry objectiveEntry = objectives[currentObjective];
         GameObject node = objectiveEntry.referencedNode;
@@ -121,6 +121,7 @@ public class Objectives : MonoBehaviour {
         {
             // Set the animator to transition to the state containing the animation
             machineAnimator = machineObject.GetComponent<Animator>();
+            machineAnimator.SetBool("reset", false);
             machineAnimator.SetInteger("mode", objectives[currentObjective].animationMode);
         }
         playedSound = 0;
@@ -129,11 +130,24 @@ public class Objectives : MonoBehaviour {
 
     void OnDisable()
     {
+        /*if (machineAnimator == null)
+            machineAnimator = machineObject.GetComponent<Animator>();
+        machineAnimator.SetInteger("mode", 0);
+        machineAnimator.CrossFade("", 0);
+        machineAnimator.StopPlayback();
+        machineAnimator.SetBool("reset", true);*/
         Debug.Log("reset objectives of "+ name);
     }
 
     void OnEnable()
     {
+        Debug.Log("reset animator of " + name);
+        /*if (machineAnimator == null)
+            machineAnimator = machineObject.GetComponent<Animator>();
+        machineAnimator.SetInteger("mode", 0);
+        machineAnimator.CrossFade("", 0);
+        machineAnimator.StopPlayback();
+        machineAnimator.SetBool("reset", true);*/
         currentObjective = 0;
         Refresh();
     }
